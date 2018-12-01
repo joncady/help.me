@@ -11,7 +11,6 @@ class App extends Component {
       <React.Fragment>
         <Header></Header>
         <SplashScreen></SplashScreen>
-        <UserAuth></UserAuth>
         <Footer></Footer>
       </React.Fragment>
     );
