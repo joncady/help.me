@@ -38,7 +38,7 @@ class Header extends Component {
         return(
             <header>
                 <div id="change">
-                    <img id ="logo" src={require("../images/LogoDraftOne.png")} alt="Logo"/>    
+                    <a href="/"><img id ="logo" src={require("../images/LogoDraftOne.png")} alt="Logo"/></a>    
                     {this.state.user ?
                     <div>
                         <Button className="button" color="danger" onClick={() => firebase.auth().signOut() } id="SignUpButton">Log Out</Button>

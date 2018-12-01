@@ -17,3 +17,11 @@
     text-align: right;
     height: auto;
 }
+
+div a, .footer-text {
+    color: #5e7f5c;
+}
+
+div a:hover {
+    color: black;
+}

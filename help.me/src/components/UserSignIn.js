@@ -34,11 +34,11 @@ export class UserSignIn extends Component {
         <Form>
             <FormGroup>
                     <Label for="email">Email</Label>
-                    <Input type="email" name="email" value={this.state.email} onChange={(event) => this.updateValue("email", event.target.value)} id="email" placeholder="Email" />
+                    <Input type="email" autoComplete="email" name="email" value={this.state.email} onChange={(event) => this.updateValue("email", event.target.value)} id="email" placeholder="Email" />
                 </FormGroup>
                 <FormGroup>
                     <Label for="examplePassword">Password</Label>
-                    <Input type="password" name="password" value={this.state.password} onChange={(event) => this.updateValue("password", event.target.value)} id="examplePassword" placeholder="Password" />
+                    <Input type="password" autoComplete="current-password" name="password" value={this.state.password} onChange={(event) => this.updateValue("password", event.target.value)} id="examplePassword" placeholder="Password" />
                 </FormGroup>
                 {this.state.errorMessage && <Alert color="danger">{this.state.errorMessage}</Alert>}
                 <Button onClick={(event) => this.signIn(event)} color="primary">Sign In</Button>
