@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import SplashScreen from './components/SplashScreen';
 import Footer from './components/Footer';
+import UserAuth from './components/UserAuth'
 
 class App extends Component {
   
@@ -10,6 +11,7 @@ class App extends Component {
       <React.Fragment>
         <Header></Header>
         <SplashScreen></SplashScreen>
+        <UserAuth></UserAuth>
         <Footer></Footer>
       </React.Fragment>
     );
