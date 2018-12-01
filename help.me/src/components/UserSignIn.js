@@ -33,17 +33,17 @@ export class UserSignIn extends Component {
         return (
             <React.Fragment>
                 <div style={{textAlign: 'center', paddingTop: '100px', marginBottom: '100px'}}>
-                    <a href="#/"><img className="LogInLogo" src={require("../images/LogoDraftOne.png")}></img></a>
+                    <a href="#/"><img className="LogInLogo" src={require("../images/LogoDraftOne.png")} alt="Logo"></img></a>
                 </div>
                 <Container>
                     <Form style={{ width: "50%", marginLeft: 'auto', marginRight: 'auto' }}>
                         <FormGroup>
                             <Label for="email">Email</Label>
-                            <Input type="email" name="email" value={this.state.email} onChange={(event) => this.updateValue("email", event.target.value)} id="email" placeholder="Email" />
+                            <Input type="email" name="email" autoComplete="email" value={this.state.email} onChange={(event) => this.updateValue("email", event.target.value)} id="email" placeholder="Email" />
                         </FormGroup>
                         <FormGroup>
                             <Label for="examplePassword">Password</Label>
-                            <Input type="password" name="password" value={this.state.password} onChange={(event) => this.updateValue("password", event.target.value)} id="examplePassword" placeholder="Password" />
+                            <Input type="password" name="password" autoComplete="current-password" value={this.state.password} onChange={(event) => this.updateValue("password", event.target.value)} id="examplePassword" placeholder="Password" />
                         </FormGroup>
                         {this.state.errorMessage && <Alert color="danger">{this.state.errorMessage}</Alert>}
                         <div style={{textAlign: 'center'}}>
