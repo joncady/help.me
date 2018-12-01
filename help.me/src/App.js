@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Welcome from './pages/Welcome';
 import Update from './components/Update';
+import ChatPage from './pages/ChatPage';
 import UserSignIn from './components/UserSignIn';
 import { Route, Switch, HashRouter as Router, Redirect } from 'react-router-dom';
 import UserSignUp from './components/UserSignUp';
@@ -15,6 +16,7 @@ class App extends Component {
           <Route path="/signin" component={UserSignIn}/>
           <Route path="/signup" component={UserSignUp}/>
           <Route path="/update" component={Update}/>
+          <Route path="/chat" component={ChatPage}/>
           <Redirect to="/" />
         </Switch>
       </Router>
