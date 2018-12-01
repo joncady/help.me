@@ -42,11 +42,11 @@ class SplashScreen extends Component {
                     <p className="lead">Chat and get help right away.</p>               
                     {this.state.user ? 
                         <div style={{ textAlign: 'center' }}>
-                            <Button outline color="success">START CHATTING</Button>
+                            <Button outline color="success" onClick={() => window.location.hash="/chat"}>START CHATTING</Button>
                         </div>
                         :
                         <div style={{ textAlign: 'center' }}>
-                            <Button outline color="success">Sign In</Button>
+                            <Button outline color="success" onClick={() => window.location.hash="/signin"}>Sign In</Button>
                         </div>
                     }        
                 </Jumbotron>
