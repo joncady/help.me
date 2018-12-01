@@ -1,0 +1,31 @@
+#logo {
+    height: 60px;
+}
+
+#change {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.button {
+    margin: 20px;
+}
+
+#SignUpButton {
+    text-align: right;
+    height: auto;
+}
+
+div a, .footer-text {
+    color: #5e7f5c;
+}
+
+div a:hover {
+    color: black;
+}
+
+.LogInLogo {
+    height: 80px;
+}
