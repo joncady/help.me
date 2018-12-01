@@ -10,7 +10,7 @@
 }
 
 .button {
-    margin: 20px; 
+    margin: 20px;
 }
 
 #SignUpButton {
@@ -24,4 +24,6 @@ div a, .footer-text {
 
 div a:hover {
     color: black;
+.LogInLogo {
+    height: 80px;
 }

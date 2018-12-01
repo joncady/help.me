@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
+import { Form, FormGroup, Label, Input, Button, Alert, Container } from 'reactstrap';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
@@ -23,26 +23,41 @@ export class UserSignIn extends Component {
     signIn = (event) => {
         event.preventDefault();
         firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
-        .then((firebaseUser) => {
-            console.log("signed in");
-            window.location.hash = "#/community"
-        }).catch((err) => this.setState({ errorMessage: err.message }));
+            .then((firebaseUser) => {
+                console.log("signed in");
+                window.location.hash = "#/community"
+            }).catch((err) => this.setState({ errorMessage: err.message }));
     }
 
     render() {
         return (
-        <Form>
-            <FormGroup>
-                    <Label for="email">Email</Label>
-                    <Input type="email" autoComplete="email" name="email" value={this.state.email} onChange={(event) => this.updateValue("email", event.target.value)} id="email" placeholder="Email" />
-                </FormGroup>
-                <FormGroup>
-                    <Label for="examplePassword">Password</Label>
-                    <Input type="password" autoComplete="current-password" name="password" value={this.state.password} onChange={(event) => this.updateValue("password", event.target.value)} id="examplePassword" placeholder="Password" />
-                </FormGroup>
-                {this.state.errorMessage && <Alert color="danger">{this.state.errorMessage}</Alert>}
-                <Button onClick={(event) => this.signIn(event)} color="primary">Sign In</Button>
-            </Form>
+            <React.Fragment>
+                <div style={{textAlign: 'center', paddingTop: '100px', marginBottom: '100px'}}>
+                    <a href="#/"><img className="LogInLogo" src={require("../images/LogoDraftOne.png")}></img></a>
+                </div>
+                <Container>
+                    <Form style={{ width: "50%", marginLeft: 'auto', marginRight: 'auto' }}>
+                        <FormGroup>
+                            <Label for="email">Email</Label>
+                            <Input type="email" name="email" value={this.state.email} onChange={(event) => this.updateValue("email", event.target.value)} id="email" placeholder="Email" />
+                        </FormGroup>
+                        <FormGroup>
+                            <Label for="examplePassword">Password</Label>
+                            <Input type="password" name="password" value={this.state.password} onChange={(event) => this.updateValue("password", event.target.value)} id="examplePassword" placeholder="Password" />
+                        </FormGroup>
+                        {this.state.errorMessage && <Alert color="danger">{this.state.errorMessage}</Alert>}
+                        <div style={{textAlign: 'center'}}>
+                            <Button onClick={(event) => this.signIn(event)} color="primary">Sign In</Button>
+                        </div>
+                        <div style={{textAlign: 'center', padding: '5px', paddingTop: '120px'}}>
+                            <a href="#/signup">Don't have an account? Sign up here.</a>
+                        </div>
+                        <div style={{textAlign: 'center', padding: '5px'}}>
+                            <a href="#/">Forgot your password? Click here.</a>
+                        </div>
+                    </Form>
+                </Container>
+            </React.Fragment>
         );
     }
 
