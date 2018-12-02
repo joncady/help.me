@@ -49,10 +49,10 @@ export class UserSignIn extends Component {
                         <div style={{textAlign: 'center'}}>
                             <Button onClick={(event) => this.signIn(event)} color="primary">Sign In</Button>
                         </div>
-                        <div style={{textAlign: 'center', padding: '5px', paddingTop: '120px'}}>
+                        <div style={{textAlign: 'center', padding: '5px', paddingTop: '100px'}}>
                             <a href="#/signup">Don't have an account? Sign up here.</a>
                         </div>
-                        <div style={{textAlign: 'center', padding: '5px'}}>
+                        <div style={{textAlign: 'center', padding: '5px', paddingBottom: '50px'}}>
                             <a href="#/">Forgot your password? Click here.</a>
                         </div>
                     </Form>

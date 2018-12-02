@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
@@ -37,7 +37,7 @@ class SplashScreen extends Component {
         return (
             <main>
                 <div className="contained">
-                    <img style={{ width: '100%' }} src={require("../images/Cover.png")}></img>    
+                    <img style={{ width: '100%' }} src={require("../images/Cover.png")} alt="Logo"></img>    
                         {this.state.user ? 
                             <div style={{ textAlign: 'center' }}>
                                 <Button outline color="success" onClick={() => window.location.hash="/chat"}>START CHATTING</Button>
