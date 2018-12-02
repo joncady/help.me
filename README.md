@@ -1,6 +1,9 @@
 # help.me
 ### Emotional support chatbot
 
+## Deployed Site
+[Our site!](https://joncady.github.io/help.me/)
+
 ## Devpost Link
 [Our post on Devpost](https://devpost.com/software/help-me-emotional-assistance-chatbot)
 

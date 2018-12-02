@@ -52,7 +52,7 @@ class ChatPage extends Component {
                 <style>{'body { background-color: #171717; }'}</style>
                 <header style={{ backgroundColor: 'white', position: 'fixed', width: '100%'}}>
                     <div id="change">
-                        <a href="/"><img id="logo" src={require("../images/LogoDraftOne.png")} alt="Logo" /></a>
+                        <a href="#/"><img id="logo" src={require("../images/LogoDraftOne.png")} alt="Logo" /></a>
                         <div>
                             <Button color="success" onClick={() => window.location.hash = "#/"}>Back To Home</Button>
                         </div>
