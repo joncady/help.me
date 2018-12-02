@@ -1,9 +1,21 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button, Input, InputGroup } from 'reactstrap';
+import { Button, Input, InputGroup } from 'reactstrap';
 import firebase from 'firebase/app';
 import 'firebase/auth';
+// import {ApiAiClient} from "api-ai-javascript";
+
+// const client = new ApiAiClient({accessToken: 'dc2685c9a24d479daf2478328f392eb7'});
+
 
 class ChatPage extends Component {
+    
+    // componentDidMount() {
+    //     client.textRequest('Hello')
+    //     .then((response) => { console.log(response)})
+    //     .catch((error) => {/* do something here too */})
+    // }
+    
+
 
     render() {
         return (
