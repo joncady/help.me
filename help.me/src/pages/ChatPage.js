@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ChatArea from '../components/ChatArea'
 import { Button, Input, InputGroup } from 'reactstrap';
-import firebase from 'firebase/app';
 import 'firebase/auth';
 import { ApiAiClient } from "api-ai-javascript";
 

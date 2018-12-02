@@ -36,7 +36,6 @@ class Header extends Component {
     }
 
     render() {
-        console.log(this.state.user)
         return(
             <header>
                 <div id="change">

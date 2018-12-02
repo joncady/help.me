@@ -57,7 +57,7 @@ class UserSignUp extends Component {
                         <div style={{textAlign: 'center'}}>
                             <Button onClick={(event) => this.signUp(event)} color="primary">Sign Up</Button>
                         </div>
-                        <div style={{textAlign: 'center', padding: '5px', paddingTop: '120px'}}>
+                        <div style={{textAlign: 'center', padding: '5px', paddingTop: '80px', paddingBottom: '50px'}}>
                             <a href="#/signin">Already have an account? Sign in here.</a>
                         </div>
                     </Form>
