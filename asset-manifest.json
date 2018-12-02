@@ -1,7 +1,7 @@
 {
   "main.css": "/help.me/static/css/main.86dc4611.chunk.css",
-  "main.js": "/help.me/static/js/main.9d82fb96.chunk.js",
-  "main.js.map": "/help.me/static/js/main.9d82fb96.chunk.js.map",
+  "main.js": "/help.me/static/js/main.b4ca9759.chunk.js",
+  "main.js.map": "/help.me/static/js/main.b4ca9759.chunk.js.map",
   "static/css/1.867eee07.chunk.css": "/help.me/static/css/1.867eee07.chunk.css",
   "static/js/1.188bbd8a.chunk.js": "/help.me/static/js/1.188bbd8a.chunk.js",
   "static/js/1.188bbd8a.chunk.js.map": "/help.me/static/js/1.188bbd8a.chunk.js.map",
@@ -12,6 +12,6 @@
   "static/media/Cover.png": "/help.me/static/media/Cover.be70b105.png",
   "static/css/1.867eee07.chunk.css.map": "/help.me/static/css/1.867eee07.chunk.css.map",
   "index.html": "/help.me/index.html",
-  "precache-manifest.264618af7e680d5cb3d0a48110935d39.js": "/help.me/precache-manifest.264618af7e680d5cb3d0a48110935d39.js",
+  "precache-manifest.98584716b4fdf28a142c89869b25efad.js": "/help.me/precache-manifest.98584716b4fdf28a142c89869b25efad.js",
   "service-worker.js": "/help.me/service-worker.js"
 }
