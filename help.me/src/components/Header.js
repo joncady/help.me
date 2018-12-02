@@ -39,7 +39,7 @@ class Header extends Component {
         return(
             <header>
                 <div id="change">
-                    <a href="/"><img id ="logo" src={require("../images/LogoDraftOne.png")} alt="Logo"/></a>    
+                    <a href="#/"><img id ="logo" src={require("../images/LogoDraftOne.png")} alt="Logo"/></a>    
                     {this.state.user ?
                     <div>
                         <span>Welcome {this.state.user.displayName}!</span>
