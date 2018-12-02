@@ -18,8 +18,12 @@ class UserSignUp extends Component {
         event.preventDefault();
         firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
             .then((firebaseUser) => {
-                firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password);
-                window.location.hash = "#/update";
+                firebase.auth().currentUser.updateProfile({
+                    displayName: this.state.displayName
+                }).then(() => {
+                    firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password);
+                    window.location.hash = "#/";
+                }); 
             }).catch((err) => this.setState({ errorMessage: err.message }));
     }
 
@@ -37,6 +41,10 @@ class UserSignUp extends Component {
                 </div>
                 <Container>
                     <Form style={{ width: "50%", marginLeft: 'auto', marginRight: 'auto' }}>
+                        <FormGroup>
+                            <Label for="displayName">Display Name</Label>
+                            <Input type="displayName" name="displayName" value={this.state.displayName} onChange={(event) => this.updateValue("displayName", event.target.value)} id="display-name" placeholder="Display name" />
+                        </FormGroup>
                         <FormGroup>
                             <Label for="email">Email</Label>
                             <Input type="email" name="email" autoComplete="email" value={this.state.email} onChange={(event) => this.updateValue("email", event.target.value)} id="email" placeholder="Email" />

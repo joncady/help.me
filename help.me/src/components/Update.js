@@ -42,14 +42,6 @@ class Update extends Component {
                     <Label for="displayName">Display Name</Label>
                     <Input type="displayName" name="displayName" value={this.state.displayName} onChange={(event) => this.updateValue("displayName", event.target.value)} id="display-name" placeholder="Display name" />
                 </FormGroup>
-                <FormGroup>
-                    <Label for="exampleFile">Profile Picture</Label>
-                    <Input type="file" name="file" id="exampleFile" onChange={(event) => {
-                        this.setState({
-                            file: event.target.files[0]
-                        })
-                    }} />
-                </FormGroup>
                 {this.state.errorMessage && <Alert color="danger">{this.state.errorMessage}</Alert>}
                 <Button onClick={() => this.updateUser()}>Join!</Button>
             </Form>

@@ -56,3 +56,21 @@ div a:hover {
 .LogInLogo {
     height: 80px;
 }
+
+.left {
+    background-color: #5e7f5c;
+    color: white;
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: auto;
+}
+
+.right {
+    background-color: white;
+    color: #5e7f5c;
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: auto;
+}

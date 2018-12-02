@@ -17,6 +17,7 @@ class Header extends Component {
         this.authUnregFunc = firebase.auth().onAuthStateChanged((firebaseUser) => {
             if(firebaseUser){
                 console.log('logged in');
+                console.log(firebaseUser.displayName);
                 this.setState({
                     user: firebaseUser
                 })
@@ -35,12 +36,14 @@ class Header extends Component {
     }
 
     render() {
+        console.log(this.state.user)
         return(
             <header>
                 <div id="change">
                     <a href="/"><img id ="logo" src={require("../images/LogoDraftOne.png")} alt="Logo"/></a>    
                     {this.state.user ?
                     <div>
+                        <span>Welcome {this.state.user.displayName}!</span>
                         <Button className="button" color="danger" onClick={() => firebase.auth().signOut() } id="SignUpButton">Log Out</Button>
                     </div>
                     :
