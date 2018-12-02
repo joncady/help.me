@@ -60,7 +60,7 @@ div a:hover {
 .left {
     background-color: #5e7f5c;
     color: white;
-    width: 50%;
+    width: 45%;
     padding: 15px;
     border-radius: 15px;
     margin-right: auto;
@@ -69,7 +69,7 @@ div a:hover {
 .right {
     background-color: white;
     color: #5e7f5c;
-    width: 50%;
+    width: 45%;
     padding: 15px;
     border-radius: 15px;
     margin-left: auto;
