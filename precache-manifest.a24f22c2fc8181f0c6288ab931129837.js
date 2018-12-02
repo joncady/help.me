@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "/help.me/static/js/runtime~main.7fad116c.js"
   },
   {
-    "revision": "b4ca9759104ed89aff29",
-    "url": "/help.me/static/js/main.b4ca9759.chunk.js"
+    "revision": "ff6773fb91ed332329a9",
+    "url": "/help.me/static/js/main.ff6773fb.chunk.js"
   },
   {
     "revision": "188bbd8a917fe4d81f2d",
     "url": "/help.me/static/js/1.188bbd8a.chunk.js"
   },
   {
-    "revision": "b4ca9759104ed89aff29",
+    "revision": "ff6773fb91ed332329a9",
     "url": "/help.me/static/css/main.86dc4611.chunk.css"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/help.me/static/css/1.867eee07.chunk.css"
   },
   {
-    "revision": "2c1c0f5262bfda4e7135d779a625d505",
+    "revision": "2646e58b9164e94b9cf609024757ebe6",
     "url": "/help.me/index.html"
   }
 ];
