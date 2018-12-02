@@ -36,20 +36,18 @@ class SplashScreen extends Component {
     render() {
         return (
             <main>
-                <Jumbotron style={{ height: "350px", marginBottom: '1em' }}>
-                    <h1 className="display-3">We're here for you.</h1>
-                    <hr className="my-2" />
-                    <p className="lead">Chat and get help right away.</p>               
-                    {this.state.user ? 
-                        <div style={{ textAlign: 'center' }}>
-                            <Button outline color="success">START CHATTING</Button>
-                        </div>
-                        :
-                        <div style={{ textAlign: 'center' }}>
-                            <Button outline color="success">Sign In</Button>
-                        </div>
-                    }        
-                </Jumbotron>
+                <div className="contained">
+                    <img style={{ width: '100%' }} src={require("../images/Cover.png")}></img>    
+                        {this.state.user ? 
+                            <div style={{ textAlign: 'center' }}>
+                                <Button outline color="success" onClick={() => window.location.hash="/chat"}>START CHATTING</Button>
+                            </div>
+                            :
+                            <div style={{ textAlign: 'center' }}>
+                                <Button outline color="success" onClick={() => window.location.hash="/signin"}>Sign In</Button>
+                            </div>
+                        }        
+                </div>   
             </main>
         )
     }
